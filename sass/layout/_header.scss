@@ -1,0 +1,109 @@
+.header {
+  background-color: var(--header-background-color);
+  border-bottom: 1px solid #ececec;
+}
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+/* Logo */
+.header-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+
+  color: #000000;
+}
+
+.header-part-logo {
+  color: #2196f3;
+}
+
+/* Навигация */
+.header-nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.header-nav-link {
+  position: relative;
+
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--hover-color);
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+.current::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+
+/* Контакты */
+.header-contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contact-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: var(--second-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--hover-color);
+}
+
+.header-contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact-icons {
+  fill: currentColor;
+  margin-right: 10px;
+}

@@ -1,0 +1,44 @@
+.decition-list {
+  display: flex;
+}
+
+.decition-item {
+  display: block;
+  width: 270px;
+}
+
+.decition-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.icons-bg {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 4px;
+}
+
+.decision-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+.decitsion-text {
+  color: var(--second-text-color);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
