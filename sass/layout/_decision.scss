@@ -1,14 +1,33 @@
-.decition-list {
+.features-list {
   display: flex;
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: var(--second-text-color);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
 }
 
-.decition-item {
+.features-list__item {
   display: block;
   width: 270px;
-}
 
-.decition-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .icons-bg {
@@ -23,22 +42,4 @@
   align-items: center;
 
   border-radius: 4px;
-}
-
-.decision-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  margin-bottom: 10px;
-}
-.decitsion-text {
-  color: var(--second-text-color);
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
 }

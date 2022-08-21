@@ -1,38 +1,41 @@
 .header {
   background-color: var(--header-background-color);
   border-bottom: 1px solid #ececec;
-}
-.header > .container {
-  display: flex;
-  align-items: center;
-}
 
-.header-nav {
-  display: flex;
-  align-items: center;
-}
-/* Logo */
-.header-logo {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-
-  color: #000000;
-}
-
-.header-part-logo {
-  color: #2196f3;
+  > .container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* Навигация */
-.header-nav-list {
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  &__part {
+    color: #2196f3;
+  }
+  &--black {
+    color: #000000;
+  }
+}
+
+.navigation__list {
   display: flex;
   margin-left: 93px;
 }
 
-.header-nav-link {
+.navigation__link {
   position: relative;
 
   display: block;
@@ -46,40 +49,50 @@
   color: var(--primary-text-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
 }
 
-.header-nav-item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
-}
-
-.header-nav-link:hover,
-.header-nav-link:focus {
-  color: var(--hover-color);
 }
 
 .current {
   color: var(--accent-color);
-}
 
-.current::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin-bottom: -1px;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--accent-color);
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+  }
 }
 
 /* Контакты */
-.header-contact-list {
+
+.contact-list {
   display: flex;
   margin-left: auto;
+
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  &__icons {
+    fill: currentColor;
+    margin-right: 10px;
+  }
 }
 
-.header-contact-link {
+.contact-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,18 +105,9 @@
   color: var(--second-text-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.header-contact-link:hover,
-.header-contact-link:focus {
-  color: var(--hover-color);
-}
-
-.header-contact-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.contact-icons {
-  fill: currentColor;
-  margin-right: 10px;
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
 }
